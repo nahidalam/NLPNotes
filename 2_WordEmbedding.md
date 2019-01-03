@@ -41,11 +41,18 @@ Then again, Word2Vec is 2 types
 - Predict the current word, based on the surrounding words. In most cases, this
 is just predicting 1 word based on the 1 closest word.
 
-Example sentence: Have a great day
+**Example sentence**: Have a great day
 
 Suppose out input is 'great' and we want to predict the next word 'day'. we use the one hot encoding of the input word and measure the output error compared to one hot encoding of the target word (day). In the process of predicting the target word, we learn the vector representation of the target word [4].
 
 ![CBOW based on one context word](./cbow-one-word-contect.png)
+
+The input is a one hot encoded vector of size V. The hidden layer contains N neurons and the output is a V length vector with the elements being the Softmax values. The hidden layer neurons just copy the weighted sum of inputs to the next layer. There is no activation function in the hidden layer. The only non-linearity is the Softmax calculations in the output layer.
+
+
+![CBOW based on multiple context words](./cbow_multiple_word_context.png)
+
+_Figure 2: CBOW based on multiple context words_
 
 **Skip Gram Model**:
 - Predict the surrounding words, based on the current word.
