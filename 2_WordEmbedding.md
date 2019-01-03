@@ -106,6 +106,7 @@ and another from hidden layer to output one-hot layer. During the runtime you th
 
 "
 ### Why activation function is not needed during runtime at Word2Vec?
+https://datascience.stackexchange.com/questions/43447/why-activation-function-is-not-needed-during-the-runtime-of-an-word2vec-model
 
 ### How do you initialize weight matrix W, W'?
 You can use pre-trained Word2Vec model weight matrix as the initializer or random initialization (more common in practice) [7].
@@ -113,8 +114,21 @@ You can use pre-trained Word2Vec model weight matrix as the initializer or rando
 ### When to use pre-trained Word Embedding or not?
 
 ### What are the issues with Word2Vec?
+For details, check out the reference [9]
+
+- Inability to handle unknown or OOV words
+- No shared representations at sub-word levels
+- Scaling to new languages requires new embedding matrices
+- Cannot be used to initialize state-of-the-art architectures. **If you have a model that takes character-based input, you normally can’t leverage the benefits of pre-training, which forces you to randomize embeddings.**
+
 
 ### Word2Vec vs GloVe
+**Word2Vec** - prediction based - NN model
+**GloVe** is count based - Count-based models learn their vectors by essentially doing dimensionality reduction on the co-occurrence counts matrix.
+**Count matrix** - large matrix of (words x context) co-occurrence information, i.e. for each "word" (the rows), you count how frequently we see this word in some "context" (the columns) in a large corpus. The number of context is very large so they factorize the matrix to smaller ones…. In the specific case of GloVe, the counts matrix is preprocessed by normalizing the counts and log-smoothing them.
+https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca
+https://www.kaggle.com/c/word2vec-nlp-tutorial#part-2-word-vectors  
+https://www.quora.com/How-is-GloVe-different-from-word2vec
 
 ### How to make these models computationally more efficient
 
@@ -127,3 +141,4 @@ You can use pre-trained Word2Vec model weight matrix as the initializer or rando
 6. Best description of why we need the weight matrix https://datascience.stackexchange.com/questions/29019/why-do-we-need-2-matrices-for-word2vec-or-glove
 7. Word Embedding Initialization https://arxiv.org/pdf/1711.09160.pdf
 8. DNN Weight Initialization https://datascience.stackexchange.com/questions/10926/how-to-deep-neural-network-weight-initialization
+9. Challenges of Word2Vec http://blog.aylien.com/word-embeddings-and-their-challenges/
