@@ -69,7 +69,7 @@ _Figure 2: CBOW based on multiple context words_
 
 ### What are these weight matrics?
 
-First - Word2Vec trainable model and runtime models are different.
+First - Word2Vec **trainable model** and **runtime model** are different.
 
 Trainable model has 2 matrices - one on the input side another in the output side. The output side W matrix makes sure the input side W is correct, by using backpropagation technique. Once you have the trainable model ready,  you don't need the output side W matrix anymore during runtime. During runtime, as mentioned in the stackexchange[6] article -
 
@@ -91,10 +91,6 @@ and another from hidden layer to output one-hot layer. During the runtime you th
 >
 >**You don't need to perform any activation on these 300 neurons and can use their values straight away as an embedding in any future task.**
 
->
->However, simply squeezing a one-hot into a 300-dimensional representation isn't enough - it must have a meaning. And we ensure this meaning is correct using an additional second matrix - which connects Hidden to Output
->
->We don't want to activate a hidden layer because activation-function won't be needed during runtime, however, in that case we will need a second matrix, going from Hidden to Output.
 >
 >However, simply squeezing a one-hot into a 300-dimensional representation isn't enough - it must have a meaning. And we ensure this meaning is correct using an additional **second matrix** - which connects Hidden to Output
 >
