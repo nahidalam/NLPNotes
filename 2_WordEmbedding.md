@@ -69,7 +69,9 @@ _Figure 2: CBOW based on multiple context words_
 
 ### What are these weight matrics?
 
-First - Word2Vec trainable model and runtime models are different. Trainable model has 2 matrices - one on the input side another in the output side. The output side W matrix makes sure the input side W is correct, by using backpropagation technique. Once you have the trainable model ready,  you don't need the output side W matrix anymore during runtime
+First - Word2Vec trainable model and runtime models are different. Trainable model has 2 matrices - one on the input side another in the output side. The output side W matrix makes sure the input side W is correct, by using backpropagation technique. Once you have the trainable model ready,  you don't need the output side W matrix anymore during runtime. During runtime, as mentioned in the stackexchange[6] article -
+
+>you would just grab the appropriate column (or row, depending on your preferred notation) from that matrix, during Runtime. The benefit is that this way you get a very cheaply pre-trained fully-connected layer, designed to work with one-hots
 
 **Now lets talk about the Word2Vec training model**
 
@@ -83,11 +85,31 @@ and another from hidden layer to output one-hot layer. During the runtime you th
 >- Hidden: 300
 >- Output: 10000
 >
-There is a matrix **E** between Input-Hidden, describing the weights to make your one-hot into an embedding. The matrix is special because each column (or rows, depending on your preferred notation) represents pre-activations in those 300 neurons - a response to a corresponding incoming 1-hot vector.
+>There is a matrix **E** between Input-Hidden, describing the weights to make your one-hot into an embedding. The matrix is special because each column (or rows, depending on your preferred notation) represents pre-activations in those 300 neurons - a response to a corresponding incoming 1-hot vector.
 >
 >**You don't need to perform any activation on these 300 neurons and can use their values straight away as an embedding in any future task.**
 
+>
+>However, simply squeezing a one-hot into a 300-dimensional representation isn't enough - it must have a meaning. And we ensure this meaning is correct using an additional second matrix - which connects Hidden to Output
+>
+>We don't want to activate a hidden layer because activation-function won't be needed during runtime, however, in that case we will need a second matrix, going from Hidden to Output.
+>
+>However, simply squeezing a one-hot into a 300-dimensional representation isn't enough - it must have a meaning. And we ensure this meaning is correct using an additional **second matrix** - which connects Hidden to Output
+>
+>We don't want to activate a hidden layer **because activation-function won't be needed during runtime**, however, in that case we will need a second matrix, going from Hidden to Output.
+>
+>This second matrix will make an entirely different one-hot from your embedding. Such a one-hot will represent a most likely word to be nearby (contextually) of your original one-hot. In other words, this output won't be your original one-hot.
+>
+>That's why a second matrix is needed. At the output, we perform a softmax, like in a classification problem.
+>
+>This allows us to express a relation "word"-->embedding-->"context-neighbor-word"
+>
+>Now, backpropagation can be done, to correct the Input-Hidden weights (Your first matrix E) - these are the weights we really care about. That's because Matrix E can be used during Runtime (I think), perhaps being plugged as a first fully-connected layer into some Recurrent Neural Net.
+
 "
+### Why activation function is not needed during runtime at Word2Vec?
+
+### How do you initialize weight matrix W, W'. I understand we keep updating W throughout the training process using Backpropagation to make sure it reflects the context correctly. But How do I initialize it in the 1st place?
 
 ### When to use pre-trained Word Embedding or not?
 
