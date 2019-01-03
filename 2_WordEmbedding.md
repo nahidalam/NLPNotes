@@ -27,7 +27,7 @@ even need any label. That's AMAZING!
 - Shallow Neural Network (only one hidden layer) - more on this later.
 
 
-### Wow do we create these word embeddings?
+### How do we create these word embeddings?
 
 There are 2 common Word Embedding models - Word2Vec and GloVe
 
@@ -35,10 +35,10 @@ Then again, Word2Vec is 2 types
 - Skip Gram and
 - Continuous Bag Of Words (CBOW)
 
-### Word2Vec 
+### Word2Vec
 Word2Vec is a way to create these word embeddings.
 
-To summarize the above based on the Kaggle article -
+The Kaggle article[5] describes it well -
 
 Word2vec is a neural network implementation that learns distributed representations for words.
 Word2Vec does not need labels in order to create meaningful representations. This is useful, since most data in the real world is unlabeled. If the network is given enough training data (tens of billions of words), it produces word vectors with intriguing characteristics. Words with similar meanings appear in clusters, and clusters are spaced such that some word relationships, such as analogies, can be reproduced using vector math. The famous example is that, with highly trained word vectors, "king - man + woman = queen."
@@ -62,15 +62,32 @@ The input is a one hot encoded vector of size V. The hidden layer contains N neu
 
 _Figure 2: CBOW based on multiple context words_
 
-### How do we know these weights?
-
-W represents word embeddings. W' represents ? What do we even mean by "W represents word embedding"
 
 **Skip Gram Model**:
 - Predict the surrounding words, based on the current word.
 
 
+### What are these weight matrics?
 
+First - Word2Vec trainable model and runtime models are different. Trainable model has 2 matrices - one on the input side another in the output side. The output side W matrix makes sure the input side W is correct, by using backpropagation technique. Once you have the trainable model ready,  you don't need the output side W matrix anymore during runtime
+
+**Now lets talk about the Word2Vec training model**
+
+During training of Word Embedding - we need 2 matrices. One from input one-hot to hidden layer
+and another from hidden layer to output one-hot layer. During the runtime you throw away the second matrix. But don't delete it permanently in case if you need to come back and continue training your model. The stackexchange article [6] describes the weight matrices the best.
+
+"
+>A typical Word2Vec train-able model consists of 1 input layer (for example, 10 000 long one-hot vector), a hidden layer (for example 300 neurons), an output (10 000 long one-hot vector)
+>
+>- Input: 10000
+>- Hidden: 300
+>- Output: 10000
+>
+There is a matrix **E** between Input-Hidden, describing the weights to make your one-hot into an embedding. The matrix is special because each column (or rows, depending on your preferred notation) represents pre-activations in those 300 neurons - a response to a corresponding incoming 1-hot vector.
+>
+>**You don't need to perform any activation on these 300 neurons and can use their values straight away as an embedding in any future task.**
+
+"
 
 ### When to use pre-trained Word Embedding or not?
 
@@ -86,3 +103,4 @@ W represents word embeddings. W' represents ? What do we even mean by "W represe
 3. http://www.marekrei.com/pub/Constructing_and_Evaluating_Word_Embeddings.pdf
 4. https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
 5. https://www.kaggle.com/c/word2vec-nlp-tutorial#part-2-word-vectors
+6. Best description of why we need the weight matrix https://datascience.stackexchange.com/questions/29019/why-do-we-need-2-matrices-for-word2vec-or-glove
