@@ -3,7 +3,7 @@
 We need to represent words in numbers before we can apply Machine Learning algorithms
 for language processing. In Machine Learning, these are called **Word Vectors**.
 
-One way to generate Word Vectors is to use count based methods. Count Vectors - as
+One way to generate Word Vectors is to use count based methods. **Count Vectors** - as
 we call it is a one-hot encoded representation of words. But one-hot encoded
 representations are very sparse - only one 1 and rest of the vectors are filled with 0.
 Also, these count vectors based representations do not offer much insight on the context
@@ -36,11 +36,11 @@ Then again, Word2Vec is 2 types
 - Continuous Bag Of Words (CBOW)
 
 ### Word2Vec
-Word2Vec is a way to create these word embeddings.
+Word2Vec is a way to create word embeddings.
 
 The Kaggle article[5] describes it well -
 
-Word2vec is a neural network implementation that learns distributed representations for words.
+>Word2vec is a neural network implementation that learns distributed representations for words.
 Word2Vec does not need labels in order to create meaningful representations. This is useful, since most data in the real world is unlabeled. If the network is given enough training data (tens of billions of words), it produces word vectors with intriguing characteristics. Words with similar meanings appear in clusters, and clusters are spaced such that some word relationships, such as analogies, can be reproduced using vector math. The famous example is that, with highly trained word vectors, "king - man + woman = queen."
 
 
@@ -51,7 +51,7 @@ is just predicting 1 word based on the 1 closest word.
 
 **Example sentence**: Have a great day
 
-Suppose out input is 'great' and we want to predict the next word 'day'. we use the one hot encoding of the input word and measure the output error compared to one hot encoding of the target word (day). In the process of predicting the target word, we learn the vector representation of the target word [4].
+Suppose out input is **great** and we want to predict the next word **day**. we use the one hot encoding of the input word and measure the output error compared to one hot encoding of the target word (day). **In the process of predicting the target word, we learn the vector representation of the target word** [4].
 
 ![CBOW based on one context word](./cbow-one-word-contect.png)
 
@@ -69,7 +69,9 @@ _Figure 2: CBOW based on multiple context words_
 
 ### What are these weight matrics?
 
-First - Word2Vec trainable model and runtime models are different. Trainable model has 2 matrices - one on the input side another in the output side. The output side W matrix makes sure the input side W is correct, by using backpropagation technique. Once you have the trainable model ready,  you don't need the output side W matrix anymore during runtime. During runtime, as mentioned in the stackexchange[6] article -
+First - Word2Vec trainable model and runtime models are different.
+
+Trainable model has 2 matrices - one on the input side another in the output side. The output side W matrix makes sure the input side W is correct, by using backpropagation technique. Once you have the trainable model ready,  you don't need the output side W matrix anymore during runtime. During runtime, as mentioned in the stackexchange[6] article -
 
 >you would just grab the appropriate column (or row, depending on your preferred notation) from that matrix, during Runtime. The benefit is that this way you get a very cheaply pre-trained fully-connected layer, designed to work with one-hots
 
