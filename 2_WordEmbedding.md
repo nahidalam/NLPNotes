@@ -1,4 +1,17 @@
 # Word Embedding
+
+We need to represent words in numbers before we can apply Machine Learning algorithms
+for language processing. In Machine Learning, these are called **Word Vectors**.
+
+One way to generate Word Vectors is to use count based methods. Count Vectors - as
+we call it is a one-hot encoded representation of words. But one-hot encoded
+representations are very sparse - only one 1 and rest of the vectors are filled with 0.
+Also, these count vectors based representations do not offer much insight on the context
+which is a holy grail in NLP.
+
+Another way of generating **Word Vectors** is - **Neural Word Embedding** which is what this topic is about
+
+To summarize - **Word Embedding** is a  
 - Dense representation
 - Distributed representation/vector - meaning each element represents a property, and they are shared between the words. For example: suppose we are representing animals based on 3
 properties - furry, dangerous, mammals. Now if we want to categorize animals
@@ -14,14 +27,15 @@ even need any label. That's AMAZING!
 - Shallow Neural Network (only one hidden layer) - more on this later.
 
 
+### Wow do we create these word embeddings?
 
+There are 2 common Word Embedding models - Word2Vec and GloVe
 
-### How to Create these word vectors:
-One way is to use count based vectors - one hot so sparse.
+Then again, Word2Vec is 2 types
+- Skip Gram and
+- Continuous Bag Of Words (CBOW)
 
-Other way is - **Neural Word Embedding** which is what this topic is about
-
-### So how do we create these word embeddings?
+### Word2Vec 
 Word2Vec is a way to create these word embeddings.
 
 To summarize the above based on the Kaggle article -
@@ -30,12 +44,6 @@ Word2vec is a neural network implementation that learns distributed representati
 Word2Vec does not need labels in order to create meaningful representations. This is useful, since most data in the real world is unlabeled. If the network is given enough training data (tens of billions of words), it produces word vectors with intriguing characteristics. Words with similar meanings appear in clusters, and clusters are spaced such that some word relationships, such as analogies, can be reproduced using vector math. The famous example is that, with highly trained word vectors, "king - man + woman = queen."
 
 
-## Types of Word Embedding
-There are 2 common Word Embedding models - Word2Vec and GloVe
-
-Then again, Word2Vec is 2 types
-- Skip Gram and
-- Continuous Bag Of Words (CBOW)
 
 **CBOW Model**:
 - Predict the current word, based on the surrounding words. In most cases, this
@@ -53,6 +61,10 @@ The input is a one hot encoded vector of size V. The hidden layer contains N neu
 ![CBOW based on multiple context words](./cbow_multiple_word_context.png)
 
 _Figure 2: CBOW based on multiple context words_
+
+### How do we know these weights?
+
+W represents word embeddings. W' represents ? What do we even mean by "W represents word embedding"
 
 **Skip Gram Model**:
 - Predict the surrounding words, based on the current word.
