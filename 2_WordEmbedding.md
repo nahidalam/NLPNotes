@@ -45,7 +45,7 @@ Example sentence: Have a great day
 
 Suppose out input is 'great' and we want to predict the next word 'day'. we use the one hot encoding of the input word and measure the output error compared to one hot encoding of the target word (day). In the process of predicting the target word, we learn the vector representation of the target word [4].
 
-![CBOW based on one context word](cbow-one-word-contect.png)
+![CBOW based on one context word](./cbow-one-word-contect.png)
 
 **Skip Gram Model**:
 - Predict the surrounding words, based on the current word.
