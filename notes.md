@@ -17,6 +17,8 @@ Reference: https://www.kaggle.com/c/word2vec-nlp-tutorial#part-1-for-beginners-b
 
 The Bag of Words model learns a vocabulary from all of the documents, then models each document by counting the number of times each word appears.
 
+BoW is a sparse one-hot encoded representation. The dimensionality of the vectors representing each document is equal to the size of the supported vocabulary
+
 #### What do we mean when we say 'our model is using BoW featurizer'?
 
 Consider the following two sentences:
