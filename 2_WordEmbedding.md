@@ -64,7 +64,11 @@ _Figure 2: CBOW based on multiple context words_
 
 
 **Skip Gram Model**:
-- Predict the surrounding words, based on the current word.
+- Predict the surrounding words, based on the current word. Skip-gram uses the centre word to predict the surrounding words.
+
+![Skip-gram](./skip-gram.png)
+
+_Figure 3: Skip-Gram Model_
 
 
 ### What are these weight matrics?
@@ -142,3 +146,4 @@ https://www.quora.com/How-is-GloVe-different-from-word2vec
 7. Word Embedding Initialization https://arxiv.org/pdf/1711.09160.pdf
 8. DNN Weight Initialization https://datascience.stackexchange.com/questions/10926/how-to-deep-neural-network-weight-initialization
 9. Challenges of Word2Vec http://blog.aylien.com/word-embeddings-and-their-challenges/
+10. Sebastian Ruder - On Ward Embedding http://ruder.io/word-embeddings-1/index.html
