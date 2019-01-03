@@ -136,7 +136,9 @@ https://www.quora.com/How-is-GloVe-different-from-word2vec
 
 ### How to make these models computationally more efficient
 
-**Reference**:
+Hierarchical Softmax and Skip-Gram Negative Sampling are used. For details - refer the original paper and slide#7 here https://docs.google.com/file/d/0B7XkCwpI5KDYRWRnd1RzWXQ2TWc/edit
+
+## Reference:
 1. Google code https://code.google.com/archive/p/word2vec/
 2. Original NIPS 2013 presentation https://docs.google.com/file/d/0B7XkCwpI5KDYRWRnd1RzWXQ2TWc/edit
 3. http://www.marekrei.com/pub/Constructing_and_Evaluating_Word_Embeddings.pdf
@@ -147,3 +149,4 @@ https://www.quora.com/How-is-GloVe-different-from-word2vec
 8. DNN Weight Initialization https://datascience.stackexchange.com/questions/10926/how-to-deep-neural-network-weight-initialization
 9. Challenges of Word2Vec http://blog.aylien.com/word-embeddings-and-their-challenges/
 10. Sebastian Ruder - On Ward Embedding http://ruder.io/word-embeddings-1/index.html
+11. Good blog referring to FastText etc. https://towardsdatascience.com/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795
