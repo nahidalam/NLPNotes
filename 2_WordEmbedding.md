@@ -107,7 +107,8 @@ and another from hidden layer to output one-hot layer. During the runtime you th
 "
 ### Why activation function is not needed during runtime at Word2Vec?
 
-### How do you initialize weight matrix W, W'. I understand we keep updating W throughout the training process using Backpropagation to make sure it reflects the context correctly. But How do I initialize it in the 1st place?
+### How do you initialize weight matrix W, W'?
+You can use pre-trained Word2Vec model weight matrix as the initializer or random initialization (more common in practice) [7].
 
 ### When to use pre-trained Word Embedding or not?
 
@@ -124,3 +125,5 @@ and another from hidden layer to output one-hot layer. During the runtime you th
 4. https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
 5. https://www.kaggle.com/c/word2vec-nlp-tutorial#part-2-word-vectors
 6. Best description of why we need the weight matrix https://datascience.stackexchange.com/questions/29019/why-do-we-need-2-matrices-for-word2vec-or-glove
+7. Word Embedding Initialization https://arxiv.org/pdf/1711.09160.pdf
+8. DNN Weight Initialization https://datascience.stackexchange.com/questions/10926/how-to-deep-neural-network-weight-initialization
