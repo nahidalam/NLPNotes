@@ -138,6 +138,8 @@ https://www.quora.com/How-is-GloVe-different-from-word2vec
 
 Hierarchical Softmax and Skip-Gram Negative Sampling are used. For details - refer the original paper and slide#7 here https://docs.google.com/file/d/0B7XkCwpI5KDYRWRnd1RzWXQ2TWc/edit
 
+- Hierarchical Softmax: Representing Softmax as binary tree. So runtime improves from O(V) to O(log2V) 
+
 ## Reference:
 1. Google code https://code.google.com/archive/p/word2vec/
 2. Original NIPS 2013 presentation https://docs.google.com/file/d/0B7XkCwpI5KDYRWRnd1RzWXQ2TWc/edit
