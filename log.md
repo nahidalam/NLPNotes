@@ -17,3 +17,12 @@
 
 ## Day 5: Jan 6, 2019
 **Today's Progress** : Worked on a cuisine prediction service. Built the model and wrote a web service to display results based on the predictive model https://github.com/nahidalam/cuisine_prediction_service
+
+## Day 6: Jan 7, 2019
+**Today's Progress** :
+
+- Revisited RNN, LSTM (and variants like Peephole Connection), GRU,
+- LSTM vs. GRU
+- Beam Search https://www.youtube.com/watch?v=RLWuzLLSIgw
+- BLEU Score (essentially a MT metrics - how good a generated sentence is)
+- Attention paper explanation https://mlexplained.com/2017/12/29/attention-is-all-you-need-explained/
