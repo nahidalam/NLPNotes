@@ -6,14 +6,17 @@
 
 ## Day 2 : Jan 3, 2019
 
-**Today's Progress** : Word Embedding, Parse Tree
+**Today's Progress** :
+- Word Embedding https://github.com/nahidalam/NLPNotes/blob/master/2_WordEmbedding.md
+- Parse Tree https://github.com/nahidalam/NLPNotes/blob/master/2_ParseTree.md
 
 ## Day 3: Jan 4, 2019
 
 **Today's Progress** : POS Tagging, Build your own POS tagger
 
 ## Day 4: Jan 5, 2019
-**Today's Progress** : Build your own POS tagger (continued)
+**Today's Progress** :
+- Build your own POS tagger (continued) https://github.com/nahidalam/NLP_Study_Group/tree/master/7_Weeks_NLP_Projects/Week4_POSTagger
 
 ## Day 5: Jan 6, 2019
 **Today's Progress** : Worked on a cuisine prediction service. Built the model and wrote a web service to display results based on the predictive model https://github.com/nahidalam/cuisine_prediction_service
@@ -21,7 +24,7 @@
 ## Day 6: Jan 7, 2019
 **Today's Progress** :
 
-- Revisited RNN, LSTM (and variants like Peephole Connection), GRU,
+- Revisited RNN, LSTM (and variants like Peephole Connection), GRU
 - LSTM vs. GRU
 - Beam Search https://www.youtube.com/watch?v=RLWuzLLSIgw
 - BLEU Score (essentially a MT metrics - how good a generated sentence is)
