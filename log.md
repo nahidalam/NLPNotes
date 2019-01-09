@@ -29,3 +29,7 @@
 - Beam Search https://www.youtube.com/watch?v=RLWuzLLSIgw
 - BLEU Score (essentially a MT metrics - how good a generated sentence is)
 - Attention paper explanation https://mlexplained.com/2017/12/29/attention-is-all-you-need-explained/
+
+## Day 7: Jan 8, 2019
+**Today's Progress** :
+- Overview on BERT. Lot to digest but at least got an idea about the transfer learning literature in NLP https://mlexplained.com/2019/01/07/paper-dissected-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-explained/
