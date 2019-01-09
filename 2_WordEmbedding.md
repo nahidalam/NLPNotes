@@ -134,11 +134,14 @@ https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c
 https://www.kaggle.com/c/word2vec-nlp-tutorial#part-2-word-vectors  
 https://www.quora.com/How-is-GloVe-different-from-word2vec
 
+### Word Embedding does NOT represent context:
+The vector values for a word represent its position in this embedding space [12] not context. Think of the distributed/dense representation example we discussed in the beginning. Words with similar property/meaning will be closer in the embedding space. But this does not represent context. You have to use BERT if you want to represent context in your embedding. 
+
 ### How to make these models computationally more efficient
 
 Hierarchical Softmax and Skip-Gram Negative Sampling are used. For details - refer the original paper and slide#7 here https://docs.google.com/file/d/0B7XkCwpI5KDYRWRnd1RzWXQ2TWc/edit
 
-- Hierarchical Softmax: Representing Softmax as binary tree. So runtime improves from O(V) to O(log2V) 
+- Hierarchical Softmax: Representing Softmax as binary tree. So runtime improves from O(V) to O(log2V)
 
 ## Reference:
 1. Google code https://code.google.com/archive/p/word2vec/
@@ -152,3 +155,4 @@ Hierarchical Softmax and Skip-Gram Negative Sampling are used. For details - ref
 9. Challenges of Word2Vec http://blog.aylien.com/word-embeddings-and-their-challenges/
 10. Sebastian Ruder - On Ward Embedding http://ruder.io/word-embeddings-1/index.html
 11. Good blog referring to FastText etc. https://towardsdatascience.com/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795
+12. https://towardsdatascience.com/word-embeddings-for-sentiment-analysis-65f42ea5d26e

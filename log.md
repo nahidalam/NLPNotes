@@ -33,3 +33,7 @@
 ## Day 7: Jan 8, 2019
 **Today's Progress** :
 - Overview on BERT. Lot to digest but at least got an idea about the transfer learning literature in NLP https://mlexplained.com/2019/01/07/paper-dissected-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-explained/
+
+## Day 8: Jan 9, 2019
+**Today's Progress** :
+- Naive Bayes and its usage in Sentiment analysis. Why Naive Bayes helps in reducing runtime complexity (because of its assumption that features are independent from each other) https://www.datacamp.com/community/tutorials/simplifying-sentiment-analysis-python
