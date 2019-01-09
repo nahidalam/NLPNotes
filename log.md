@@ -37,3 +37,7 @@
 ## Day 8: Jan 9, 2019
 **Today's Progress** :
 - Naive Bayes and its usage in Sentiment analysis. Why Naive Bayes helps in reducing runtime complexity (because of its assumption that features are independent from each other) https://www.datacamp.com/community/tutorials/simplifying-sentiment-analysis-python
+- Sentiment analysis using Word Embedding (word2vec), LSTM, Keras  https://ahmedbesbes.com/sentiment-analysis-on-twitter-using-word2vec-and-keras.html
+https://www.liip.ch/en/blog/sentiment-detection-with-keras-word-embeddings-and-lstm-deep-learning-networks
+- **TODO** Sentiment analysis using BERT embedding https://github.com/brightmart/sentiment_analysis_fine_grain
+https://gluon-nlp.mxnet.io/examples/sentence_embedding/bert.html
