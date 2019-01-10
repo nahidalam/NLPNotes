@@ -5,7 +5,8 @@ Processing (NLP).
 
 The goal is to
 
-- Build expertise in NLP
+- Increase understanding in NLP
+- Understand and practice Deep Learning techniques in NLP 
 
 ### But How?
 
