@@ -41,3 +41,8 @@
 https://www.liip.ch/en/blog/sentiment-detection-with-keras-word-embeddings-and-lstm-deep-learning-networks
 - **TODO** Sentiment analysis using BERT embedding https://github.com/brightmart/sentiment_analysis_fine_grain
 https://gluon-nlp.mxnet.io/examples/sentence_embedding/bert.html
+
+## Day 9: Jan 10, 2019
+**Today's Progress** :
+- Finished this Datacamp course on Deep Learning with Python and Keras. https://campus.datacamp.com/courses/deep-learning-in-python
+I did some projects with Keras before, outside of my job sometimes in mid 2017. So it was a good refresher. 
