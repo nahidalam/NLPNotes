@@ -45,4 +45,11 @@ https://gluon-nlp.mxnet.io/examples/sentence_embedding/bert.html
 ## Day 9: Jan 10, 2019
 **Today's Progress** :
 - Finished this Datacamp course on Deep Learning with Python and Keras. https://campus.datacamp.com/courses/deep-learning-in-python
-I did some projects with Keras before, outside of my job sometimes in mid 2017. So it was a good refresher. 
+I did some projects with Keras before, outside of my job sometimes in mid 2017. So it was a good refresher.
+
+## Day 10: Jan 11, 2019
+**Today's Progress** :
+- Setup Domino Data Lab for some project submission in SpringBoard
+- Generative vs. Discriminative Models
+https://stackoverflow.com/questions/879432/what-is-the-difference-between-a-generative-and-a-discriminative-algorithm
+https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3
