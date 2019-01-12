@@ -1,5 +1,12 @@
 # Notes on Natural Language Processing (NLP) - Log
 
+## I plan to learn and do hands on code on
+1. Word Embedding
+  - learn to use word2vec and/or BERT in Sentiment Analysis
+2. RNN and its variants like LSTM, bi-LSTM
+  - Implement LSTM in some problem
+3. Language models - ELMo, ULMFit, BERT  and code them up
+
 ## Day 1 : Jan 2, 2019
 
 **Today's Progress** : n-gram model, Bag-of-Word(BoW), Tf-Idf
@@ -53,3 +60,8 @@ I did some projects with Keras before, outside of my job sometimes in mid 2017. 
 - Generative vs. Discriminative Models
 https://stackoverflow.com/questions/879432/what-is-the-difference-between-a-generative-and-a-discriminative-algorithm
 https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3
+
+## Day 11: Jan 12, 2019
+**Today's Progress** :
+- Trying to understand how LSTM is used in the dialog management in Rasa https://forum.rasa.com/t/understanding-the-usage-of-lstm-in-keras-policy/4278
+- Implement LSTM in Keras for sentiment analysis https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47
