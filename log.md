@@ -65,3 +65,8 @@ https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3
 **Today's Progress** :
 - Trying to understand how LSTM is used in the dialog management in Rasa https://forum.rasa.com/t/understanding-the-usage-of-lstm-in-keras-policy/4278
 - Implement LSTM in Keras for sentiment analysis https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47
+
+## Day 12: Jan 13, 2019
+**Today's Progress** :
+- Reviewed SQL JOINS and some Data Wrangling techniques (not really NLP)
+- Started Advanced Deep Learning with Keras https://www.datacamp.com/courses/advanced-deep-learning-with-keras-in-python

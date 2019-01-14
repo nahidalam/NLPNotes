@@ -3,6 +3,8 @@ The web is full of LSTM explanations such as [1], [2] and [3]. I am more interes
 
 For example - in **Dialog Management**. While developing chatbots - I have used Rasa (www.rasa.com). Rasa has 2 components - `Rasa NLU` and `Rasa Core`. The `Rasa Core` is responsible for Dialog Management so it will be interesting to see how they are using LSTM. I don't fully understand it yet so have asked this questions at Rasa forum ( https://forum.rasa.com/t/understanding-the-usage-of-lstm-in-keras-policy/4278).
 
+Fundamentally, the dialog management of a chatbot is a sequence modeling task. What reply should come after what question - that is essentially similar to sequence modeling task. Think of the Beam Search example in NMT or any other Language Modeling task. Dialog Management in its core is a similar sequence modeling problem. So LSTM is used. 
+
 Another usage is **Sentiment Analysis**. The tutorial at [4] is a short of sweet example of using LSTM for sentiment analysis. It has used Keras library for  doing that
 
 ```
