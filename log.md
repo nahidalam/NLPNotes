@@ -69,9 +69,10 @@ https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3
 ## Day 12: Jan 13, 2019
 **Today's Progress** :
 - Reviewed SQL JOINS and some Data Wrangling techniques (not really NLP)
-- Started Advanced Deep Learning with Keras https://www.datacamp.com/courses/advanced-deep-learning-with-keras-in-python
+- Advanced Deep Learning with Keras. Interesting advanced techniques when you have multiple inputs in the input layer. Not going deep into the course but will use some of it in the capstone project https://www.datacamp.com/courses/advanced-deep-learning-with-keras-in-python
 
 ## Day 13: Jan 14, 2019
 **Today's Progress** :
 - Learned about Explainable ML https://christophm.github.io/interpretable-ml-book
-Example explainable models are - Linear Regression, DT, Logistic Regression etc. Interesting that Neural Network models are not explainable. But I guess we can use the model agnostic characteristics (such as feature importance, feature relations etc.) while using Neural Networks. 
+Example explainable models are - Linear Regression, DT, Logistic Regression etc. Interesting that Neural Network models are not explainable. But I guess we can use the model agnostic characteristics (such as feature importance, feature relations etc.) while using Neural Networks.
+- Explainable Neural Network https://distill.pub/2018/building-blocks/
