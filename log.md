@@ -76,3 +76,4 @@ https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3
 - Learned about Explainable ML https://christophm.github.io/interpretable-ml-book
 Example explainable models are - Linear Regression, DT, Logistic Regression etc. Interesting that Neural Network models are not explainable. But I guess we can use the model agnostic characteristics (such as feature importance, feature relations etc.) while using Neural Networks.
 - Explainable Neural Network https://distill.pub/2018/building-blocks/
+- Finalized the capstone project proposal
