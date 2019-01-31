@@ -77,3 +77,36 @@ https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3
 Example explainable models are - Linear Regression, DT, Logistic Regression etc. Interesting that Neural Network models are not explainable. But I guess we can use the model agnostic characteristics (such as feature importance, feature relations etc.) while using Neural Networks.
 - Explainable Neural Network https://distill.pub/2018/building-blocks/
 - Finalized the capstone project proposal
+
+## Day 14: Jan 15, 2019
+**Today's Progress** :
+- Slow progress due to bunch of meetings. Working on SpringBoard exercises
+
+## Day 15: Jan 16, 2019
+**Today's Progress** :
+- Working on SpringBoard exercises on Logistic Regression
+
+## Day 16: Jan 17, 2019
+**Today's Progress** :
+- Working on Unsupervised learning from datacamp https://campus.datacamp.com/courses/unsupervised-learning-in-python
+
+## Day 17: Jan 18, 2019
+**Today's Progress** :
+- Working on Unsupervised learning from datacamp (continued) https://campus.datacamp.com/courses/unsupervised-learning-in-python
+
+## Day 18: Jan 19, 2019
+**Today's Progress** :
+- Working on Unsupervised learning from datacamp (continued) https://campus.datacamp.com/courses/unsupervised-learning-in-python
+
+## Day 19: Jan 20, 2019
+**Today's Progress** :
+- Read the paper "Hidden Technical Debt in Machine Learning Systems" https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf
+
+## Day 20: Jan 21, 2019
+**Today's Progress** :
+- Read the paper "Deep Neural Networks for YouTube Recommendations" https://static.googleusercontent.com/media/research.google.com/ru//pubs/archive/45530.pdf
+
+## Day 21: Jan 30, 2019
+**Today's Progress** :
+- After a few days break "An In-Depth Tutorial on AllenNLP"
+http://mlexplained.com/2019/01/30/an-in-depth-tutorial-to-allennlp-from-basics-to-elmo-and-bert/
