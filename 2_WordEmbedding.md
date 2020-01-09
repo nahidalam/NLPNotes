@@ -32,7 +32,7 @@ even need any label. That's AMAZING!
 There are 2 common Word Embedding models - Word2Vec and GloVe
 
 Then again, Word2Vec is 2 types
-- Skip Gram and
+- Skip Gram (details of how to create skip gram based word2vec https://github.com/nahidalam/study_material/blob/master/ai_concepts.md)
 - Continuous Bag Of Words (CBOW)
 
 ### Word2Vec
