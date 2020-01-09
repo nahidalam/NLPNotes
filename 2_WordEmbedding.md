@@ -109,6 +109,14 @@ and another from hidden layer to output one-hot layer. During the runtime you th
 >Now, backpropagation can be done, to correct the Input-Hidden weights (Your first matrix E) - these are the weights we really care about. That's because Matrix E can be used during Runtime (I think), perhaps being plugged as a first fully-connected layer into some Recurrent Neural Net.
 
 "
+
+### Why do we need two matrices W and W' in Word2Vec?
+In Word2Vec trainable model, there are two different weight matrix. The matrix 𝑊 from input-to-hidden layer and the matrix 𝑊′ from hidden-to-output layer.
+
+Referring to this article, I understand that the reason we have the matrix 𝑊′ is basically to compensate for the lack of activation function in the output layer. As activation function is not needed during runtime, there is no activation function in the output layer. But we need to update the input-to-hidden layer weight matrix 𝑊 through backpropagation to eventually reach to the word embedding most suitable for our usecase. So there is this weight matrix 𝑊′ in the output layer.
+
+But my question is why activation function is not needed during the runtime? Can anyone please explain?
+
 ### Why activation function is not needed during runtime at Word2Vec?
 https://datascience.stackexchange.com/questions/43447/why-activation-function-is-not-needed-during-the-runtime-of-an-word2vec-model
 
